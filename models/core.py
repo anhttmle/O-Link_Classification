@@ -17,7 +17,8 @@ def build_model(hparams):
         rnn_imd = layers.LSTM(
             units=hparams["rnn_units"],
             return_sequences=(i + 1 < hparams["rnn_layers"]),
-            dropout=hparams["rnn_dropout"]
+            dropout=hparams["rnn_dropout"],
+            activation="sigmoid"
         )(rnn_imd)
 
     imd = rnn_imd
