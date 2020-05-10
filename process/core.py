@@ -111,6 +111,7 @@ def avg_evaluate(all_results):
 
 
 def k_fold_experiment(config, fold_paths, train_path, test_path):
+    print(config)
     hparams = config["hparams"]
 
     train_results = []
