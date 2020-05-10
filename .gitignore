@@ -1,0 +1,6 @@
+.idea/
+*.swp
+__MACOSX/
+venv/
+k_fold/
+data.zip
